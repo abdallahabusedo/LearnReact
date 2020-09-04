@@ -44,3 +44,11 @@ We will Start with
 - Routing
 - State Managements Redux
 - Utilities
+
+# Before We Start
+
+You Must Install Node.js
+you can find you version [in this Link ](https://nodejs.org/en/download/)
+
+and then we must Download a Text editor , i Recommend Vs Code
+and yoy can download it from [this link ](https://code.visualstudio.com/)
