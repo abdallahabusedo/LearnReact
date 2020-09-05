@@ -230,3 +230,76 @@ we use here the `this` keyword to access the props
 <hr>
 
 ## State
+
+|                           props                            |                 State                  |
+| :--------------------------------------------------------: | :------------------------------------: |
+|             props get passed to the component              | state is managed within the component  |
+|                    function parameters                     | variable declared in the function body |
+|                props are immutable means :                 |          State can be Changed          |
+| parent own the props and cannot be changed by the children |                  ---                   |
+|               props ==> Functional Component               | useState Hook ==> Functional Component |
+|               this.props ==> Class component               |     this.state ==> Class component     |
+
+lets make a new component called Massage and we want to make a state that
+hold the massage text and we will make a button to change the text
+
+```
+import React, { Component } from "react";
+
+class Massage extends Component {
+  render() {
+    return (
+      <div>
+        <div>{this.state.massage}</div>
+        <button onClick={() => this.changeMassage()}>Change the Text</button>
+      </div>
+    );
+  }
+}
+
+export default Massage;
+
+```
+
+this is the normal structure
+
+now we want to make a state
+
+```
+import React, { Component } from "react";
+
+class Massage extends Component {
+  constructor() {
+    super();
+    this.state = {
+      massage: " welcome abdallah",
+    };
+  }
+
+  changeMassage = () => {
+    this.setState({ massage: "text changed" });
+  };
+  render() {
+    return (
+      <div>
+        <div>{this.state.massage}</div>
+        <button onClick={() => this.changeMassage()}>Change the Text</button>
+      </div>
+    );
+  }
+}
+
+export default Massage;
+
+```
+
+- we put the state inside the constructor
+- state is an object
+- onClick we call the function `onClick={() => this.changeMassage()}` as an attribute
+- the function use the useState to change the state by passing object with the same name in the state
+
+now we will explain the useState
+
+<hr>
+
+## useState
