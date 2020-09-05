@@ -49,22 +49,6 @@ So After We Run you will find Page Similar to this
 
 ## Folder Structure
 
-├── README.md
-├── node_modules
-├── package.json
-├── .gitignore
-├── public
-│ ├── favicon.ico
-│ ├── index.html
-│ └── manifest.json
-└── src
-| |-- App.css
-| |-- App.js
-| ├── index.css
-| ├── index.js
-| └── setupTests.js
-| |--------------
-
 > lets Talk about package.json this file Contains the dependencies and the scripts for the Project
 
 > manifest.json in the Public folder is connected with progressive web app which is out of scope our discussion
@@ -100,9 +84,14 @@ this means that App Component will render in the root div
 
 ## component types
 
-| a stateless functional component | a stateful class component |
-| :------------------------------: | :------------------------: |
-|           JS Functions           | Class extending component  |
+|    a stateless functional component     |       a stateful class component       |
+| :-------------------------------------: | :------------------------------------: |
+|              JS Functions               |       Class extending component        |
+| use Func Components as much as possible |              More Feature              |
+|        Absence of 'this' Keyword        | Maintain their own private data- state |
+|      Solution without using State       |            Complex UI Logic            |
+|        Mainly responsible for UI        |        Provide Lifecycle hooks         |
+|   Stateless or Dumb or Presentational   |     stateFul or Smart or Container     |
 
 ### `functional component`
 
@@ -112,6 +101,12 @@ function Welcome(props) {
 }
 ```
 
+<div align="center">
+
+![image](https://user-images.githubusercontent.com/42722816/92294144-7262da00-ef29-11ea-9adf-3c5a0c97898f.png)
+
+</div>
+
 ### `class component`
 
 ```
@@ -120,5 +115,10 @@ class Welcome extends Component{
         return<h1>Hello {this.props.name}</h1>;
     }
 }
-
 ```
+
+<div align="center">
+
+![image](https://user-images.githubusercontent.com/42722816/92294375-f4540280-ef2b-11ea-895c-e199c082f333.png)
+
+</div>

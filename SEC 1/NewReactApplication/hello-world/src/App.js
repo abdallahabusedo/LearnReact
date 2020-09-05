@@ -1,12 +1,18 @@
 import React from "react";
-
 import "./App.css";
-
+// you must import the Exported component and implement it as a self close tag
+import Greet from "./Components/GreetFunc";
+// if the Exportation was export Greet
+// then you are must send the exact same name of the Function
+// and import it like this:
+// import { Greet } from "./Components/GreetFunc";
+import GreetClass from "./Components/GreetClass";
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Hello World</p>
+        <Greet />
+        <GreetClass />
       </header>
     </div>
   );
