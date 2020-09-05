@@ -82,6 +82,8 @@ this means that App Component will render in the root div
 
 > you can say that our application has five components one for header one for side nav one for the main content one for the footer and finally one component to contain every other component the containing component is the root component and is usually named as app
 
+<hr>
+
 ## component types
 
 |    a stateless functional component     |       a stateful class component       |
@@ -92,6 +94,8 @@ this means that App Component will render in the root div
 |      Solution without using State       |            Complex UI Logic            |
 |        Mainly responsible for UI        |        Provide Lifecycle hooks         |
 |   Stateless or Dumb or Presentational   |     stateFul or Smart or Container     |
+
+<hr>
 
 ### `functional component`
 
@@ -106,6 +110,8 @@ function Welcome(props) {
 ![image](https://user-images.githubusercontent.com/42722816/92294144-7262da00-ef29-11ea-9adf-3c5a0c97898f.png)
 
 </div>
+
+<hr>
 
 ### `class component`
 
@@ -122,3 +128,105 @@ class Welcome extends Component{
 ![image](https://user-images.githubusercontent.com/42722816/92294375-f4540280-ef2b-11ea-895c-e199c082f333.png)
 
 </div>
+
+<hr>
+
+## JSX
+
+JavaScript XML (JSX) : `EXtension to the JS language syntax`
+
+- JSX tags have a name , attribute and children
+- JSX is not a necessity to write React application
+- JSx makes your react code simpler and elegant
+- JSX ultimately transpile to pure JS which is understood by the browsers
+
+```
+const Hello = () =>{
+  return React.createElement(
+    'div',
+    {id: "hello" , className: "dummyClass"},
+    React.createElement('h1', null, 'hello abdallah)
+  )
+}
+```
+
+is the same to
+
+```
+const Hello = () =>{
+  return (
+    <div className="dummyClass">
+    <h1>hello abdallah</h1>
+    </div>
+  )
+}
+```
+
+## JSX differences
+
+class ==> className
+for ==> htmlFor
+onclick ==> onClick
+and more ...
+
+<hr>
+
+## Props
+
+- Props are arguments passed into React components.
+- Props are passed to components via HTML attributes.
+
+### props in the Functional component
+
+--- App.js ---
+
+```
+  <Greet name="Abdallah" heroName="ironMan" />
+  <Greet name="Sara" heroName="superMan" />
+  <Greet name="Kareem" heroName="spiderMan" />
+```
+
+here we send a props as an attribute to the Greet component
+so we go the Greet component and use it like this
+
+```
+const Greet = (props) => {
+  console.log(props);
+  return (
+    <h1>
+      Hello {props.name} aka {props.heroName}
+    </h1>
+  );
+};
+```
+
+we use `props.theNameOfProps` to access it
+
+### props in the Class component
+
+```
+<GreetClass name="Samer" heroName="Flash" />
+<GreetClass name="Ahmed" heroName="Hulk" />
+<GreetClass name="Kenzy" heroName="Wonder Woman" />
+```
+
+here we send a props as an attribute to the GreetClass component
+so we go the GreetClass component and use it like this
+
+```
+export default class GreetClass extends Component {
+  render() {
+    return (
+      <h1>
+        Hello {this.props.name} aka {this.props.heroName}
+      </h1>
+    );
+  }
+}
+```
+
+we use here the `this` keyword to access the props
+
+<hr>
+
+## State

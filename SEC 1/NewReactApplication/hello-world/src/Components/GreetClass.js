@@ -7,6 +7,13 @@ import React, { Component } from "react";
 
 export default class GreetClass extends Component {
   render() {
-    return <h1>Hello Class</h1>;
+    /*************************************
+     *props.name= "value" ; is Wrong     *
+     *************************************/
+    return (
+      <h1>
+        Hello {this.props.name} aka {this.props.heroName}
+      </h1>
+    );
   }
 }

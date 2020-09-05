@@ -10,7 +10,14 @@ import React from "react";
  }
 */
 // or we can use the ES6 Arrow Function
-const Greet = () => <h1>Hello Function</h1>;
+const Greet = (props) => {
+  console.log(props);
+  return (
+    <h1>
+      Hello {props.name} aka {props.heroName}
+    </h1>
+  );
+};
 
 // then we Export this function to use it in the App Component (parent Component)
 

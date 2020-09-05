@@ -11,8 +11,15 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Greet />
-        <GreetClass />
+        {/* <Greet />
+        <GreetClass /> */}
+        {/* for Props part we will send the name attribute  */}
+        <Greet name="Abdallah" heroName="ironMan" />
+        <Greet name="Sara" heroName="superMan" />
+        <Greet name="Kareem" heroName="spiderMan" />
+        <GreetClass name="Samer" heroName="Flash" />
+        <GreetClass name="Ahmed" heroName="Hulk" />
+        <GreetClass name="Kenzy" heroName="Wonder Woman" />
       </header>
     </div>
   );
