@@ -302,4 +302,56 @@ now we will explain the useState
 
 <hr>
 
-## useState
+## setState
+
+open `SEC 1/newReactApplication/hello-world/src/Counter.js` to see the example
+
+> setState() schedules an update to a component’s state object. When state changes, the component responds by re-rendering.
+
+<hr>
+
+## Destructuring props and state
+
+### Destructuring props in the Functional component
+
+2 ways to do it
+
+- 1st way
+
+```
+const Greet = ({ name, heroName }) => {
+  return (
+    <h1>
+      Hello {name} aka {heroName}
+    </h1>
+  );
+};
+```
+
+or
+
+```
+const Greet = (props) =>{
+  const { name, heroName} = props
+  return (
+    <h1>
+      Hello {name} aka {heroName}
+    </h1>
+  );
+};
+```
+
+### Destructuring props in the Class component
+
+```
+export default class GreetClass extends Component {
+  render() {
+    const { name, heroName } = this.props;
+    return (
+      <h1>
+        Hello {name} aka {heroName}
+      </h1>
+    );
+  }
+}
+```

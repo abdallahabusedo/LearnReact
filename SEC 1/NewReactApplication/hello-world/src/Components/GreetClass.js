@@ -10,9 +10,10 @@ export default class GreetClass extends Component {
     /*************************************
      *props.name= "value" ; is Wrong     *
      *************************************/
+    const { name, heroName } = this.props;
     return (
       <h1>
-        Hello {this.props.name} aka {this.props.heroName}
+        Hello {name} aka {heroName}
       </h1>
     );
   }

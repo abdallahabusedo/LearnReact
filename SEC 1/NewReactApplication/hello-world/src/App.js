@@ -22,8 +22,12 @@ function App() {
         <GreetClass name="Samer" heroName="Flash" />
         <GreetClass name="Ahmed" heroName="Hulk" />
         <GreetClass name="Kenzy" heroName="Wonder Woman" /> */}
-        <Massage />
-        <Counter />
+        {/* until the setState */}
+        {/* <Massage />
+        <Counter /> */}
+        {/* Destructuring props and state */}
+        <Greet name="abdallah" heroName="ironMan" />
+        <GreetClass name="Ahmed" heroName="Hulk" />
       </header>
     </div>
   );

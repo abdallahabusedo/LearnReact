@@ -10,15 +10,25 @@ import React from "react";
  }
 */
 // or we can use the ES6 Arrow Function
-const Greet = (props) => {
-  console.log(props);
+// const Greet = (props) => {
+//   console.log(props);
+//   return (
+//     <h1>
+//       Hello {props.name} aka {props.heroName}
+//     </h1>
+//   );
+// };
+
+/**Destructuring props and state */
+const Greet = ({ name, heroName }) => {
+  /**OR  const Greet = (props) =>{}*/
+  // const { name, heroName} = props
   return (
     <h1>
-      Hello {props.name} aka {props.heroName}
+      Hello {name} aka {heroName}
     </h1>
   );
 };
-
 // then we Export this function to use it in the App Component (parent Component)
 
 export default Greet;
