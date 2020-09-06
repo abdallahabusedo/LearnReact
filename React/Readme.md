@@ -355,3 +355,45 @@ export default class GreetClass extends Component {
   }
 }
 ```
+
+<hr>
+
+## Event Handling
+
+### Event Handling in the Functional component
+
+```
+import React from "react";
+
+function FunctionClick() {
+  function clickHandler() {
+    console.log("Function clicked");
+  }
+  return (
+    <div>
+      <button onClick={clickHandler}>Click</button>
+    </div>
+  );
+}
+
+export default FunctionClick;
+```
+
+### Event Handling in the Class component
+
+```
+import React, { Component } from "react";
+
+export default class ClassClick extends Component {
+  clickHandler = () => {
+    console.log("Class Clicked");
+  };
+  render() {
+    return (
+      <div>
+        <button onClick={this.clickHandler}>Click</button>
+      </div>
+    );
+  }
+}
+```
