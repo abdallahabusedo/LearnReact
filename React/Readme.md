@@ -437,3 +437,47 @@ there anther solution : use the Arrow function
 </div>
 
 and there so other many solutions for this problem search for it
+
+---
+
+## Methods as props
+
+what if we want to send a method from a parent component to a child component
+
+we will send the method as an attribute on the child component when we call it in the parent component
+
+lets see how in the code:
+
+### Parent Component
+
+<div align="center">
+
+![a](https://user-images.githubusercontent.com/42722816/92333473-0ba70300-f086-11ea-92df-c2b5fc5bff8f.png)
+
+</div>
+
+### Child component
+
+<div align="center">
+
+![a](https://user-images.githubusercontent.com/42722816/92333505-3ee99200-f086-11ea-8330-0a72892b4fe1.png)
+
+</div>
+
+what id we want to send something from the child component to the parent component through the greetParent method
+
+### Child component
+
+<div align="center">
+
+![a](https://user-images.githubusercontent.com/42722816/92333539-85d78780-f086-11ea-9328-151eddac6eac.png)
+
+</div>
+
+### Parent Component GreetParent method
+
+<div align="center">
+
+![a](https://user-images.githubusercontent.com/42722816/92333553-abfd2780-f086-11ea-851a-7aa4fed7f65b.png)
+
+</div>
