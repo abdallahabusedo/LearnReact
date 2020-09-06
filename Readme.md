@@ -2,11 +2,9 @@
 
 <div align="center">
 
-[![GitHub contributors](https://img.shields.io/github/contributors/abdallahabusedo/LearnReact)](https://github.com/abdallahabusedo/LearnReact/contributors)
 [![GitHub issues](https://img.shields.io/github/issues/abdallahabusedo/LearnReact)](https://github.com/abdallahabusedo/LearnReact/issues)
 [![GitHub forks](https://img.shields.io/github/forks/abdallahabusedo/LearnReact)](https://github.com/abdallahabusedo/LearnReact/network)
 [![GitHub stars](https://img.shields.io/github/stars/abdallahabusedo/LearnReact)](https://github.com/abdallahabusedo/LearnReact/stargazers)
-[![GitHub license](https://img.shields.io/github/license/abdallahabusedo/LearnReact)](https://github.com/abdallahabusedo/LearnReact/blob/master/LICENSE)
 
 </div>
 

@@ -14,6 +14,7 @@ import ClassClick from "./Components/ClassClick";
 import EventBind from "./Components/EventBind";
 import ParentComp from "./Components/ParentComp";
 import UserGreeting from "./Components/UserGreeting";
+import NameList from "./Components/NameList";
 function App() {
   return (
     <div className="App">
@@ -41,7 +42,9 @@ function App() {
         {/* Methods as props */}
         {/* <ParentComp /> */}
         {/* Conditional rendering */}
-        <UserGreeting />
+        {/* <UserGreeting /> */}
+        {/* List Rendering */}
+        <NameList />
       </header>
     </div>
   );

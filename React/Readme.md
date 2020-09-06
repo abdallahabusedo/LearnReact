@@ -446,7 +446,9 @@ what if we want to send a method from a parent component to a child component
 
 we will send the method as an attribute on the child component when we call it in the parent component
 
-lets see how in the code:
+## lets see how in the code:
+
+---
 
 ### Parent Component
 
@@ -482,6 +484,8 @@ what id we want to send something from the child component to the parent compone
 
 </div>
 
+---
+
 ## Conditional Rendering
 
 - if/else
@@ -512,5 +516,23 @@ what id we want to send something from the child component to the parent compone
 <div align="center">
 
 ![a](https://user-images.githubusercontent.com/42722816/92335269-ea4e1300-f095-11ea-9104-11a79a15c806.png)
+
+---
+
+## List Rendering
+
+using the map on arrays or objects
+
+<div align="center">
+
+![a](https://user-images.githubusercontent.com/42722816/92336290-5719db00-f09f-11ea-9786-d8376f698a1c.png)
+
+</div>
+
+and the output is
+
+<div align="center">
+
+![image](https://user-images.githubusercontent.com/42722816/92336307-76b10380-f09f-11ea-8b74-9f207e58e02b.png)
 
 </div>
