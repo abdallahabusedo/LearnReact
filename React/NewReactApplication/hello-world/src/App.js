@@ -11,6 +11,7 @@ import Massage from "./Components/Massage";
 import Counter from "./Components/Counter";
 import FunctionClick from "./Components/functionClick";
 import ClassClick from "./Components/ClassClick";
+import EventBind from "./Components/EventBind";
 function App() {
   return (
     <div className="App">
@@ -31,8 +32,10 @@ function App() {
         {/* <Greet name="abdallah" heroName="ironMan" />
         <GreetClass name="Ahmed" heroName="Hulk" /> */}
         {/* Event Handling */}
-        <FunctionClick />
-        <ClassClick />
+        {/* <FunctionClick />
+        <ClassClick /> */}
+        {/* Binding Event Handlers */}
+        <EventBind />
       </header>
     </div>
   );

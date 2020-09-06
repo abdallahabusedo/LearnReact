@@ -397,3 +397,43 @@ export default class ClassClick extends Component {
   }
 }
 ```
+
+<hr>
+
+## Binding Event Handlers
+
+if we want to change a text content by using the Event handler
+
+we write this code
+
+<div align="center">
+
+![a](https://user-images.githubusercontent.com/42722816/92329055-3df43880-f065-11ea-9781-7e6bc48f7201.png)
+
+</div>
+
+But we will find this Error
+
+<div align="center">
+
+![image](https://user-images.githubusercontent.com/42722816/92328843-d4bff580-f063-11ea-8cb8-5410d67ddfda.png)
+
+</div>
+
+so the first solution is to use `.bind(this)`
+
+<div align="center">
+
+![a](https://user-images.githubusercontent.com/42722816/92329077-73008b00-f065-11ea-8fba-73a7632ca838.png)
+
+</div>
+
+there anther solution : use the Arrow function
+
+<div align="center">
+
+![a](https://user-images.githubusercontent.com/42722816/92329165-e60a0180-f065-11ea-9608-f1cb54234294.png)
+
+</div>
+
+and there so other many solutions for this problem search for it
