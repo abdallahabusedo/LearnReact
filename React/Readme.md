@@ -481,3 +481,36 @@ what id we want to send something from the child component to the parent compone
 ![a](https://user-images.githubusercontent.com/42722816/92333553-abfd2780-f086-11ea-851a-7aa4fed7f65b.png)
 
 </div>
+
+## Conditional Rendering
+
+- if/else
+<div align="center">
+
+![a](https://user-images.githubusercontent.com/42722816/92335161-cb02b600-f094-11ea-887e-528f28ba097d.png)
+
+</div>
+
+- Element variable
+
+<div align="center">
+
+![a](https://user-images.githubusercontent.com/42722816/92335209-5c722800-f095-11ea-8e1f-55e08e384b89.png)
+
+</div>
+
+- Ternary conditional operator
+
+<div align="center">
+
+![a](https://user-images.githubusercontent.com/42722816/92335231-95aa9800-f095-11ea-9366-b0599a8f641d.png)
+
+</div>
+
+- Short circuit operator
+
+<div align="center">
+
+![a](https://user-images.githubusercontent.com/42722816/92335269-ea4e1300-f095-11ea-9104-11a79a15c806.png)
+
+</div>

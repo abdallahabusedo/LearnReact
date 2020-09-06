@@ -13,6 +13,7 @@ import FunctionClick from "./Components/functionClick";
 import ClassClick from "./Components/ClassClick";
 import EventBind from "./Components/EventBind";
 import ParentComp from "./Components/ParentComp";
+import UserGreeting from "./Components/UserGreeting";
 function App() {
   return (
     <div className="App">
@@ -38,7 +39,9 @@ function App() {
         {/* Binding Event Handlers */}
         {/* <EventBind /> */}
         {/* Methods as props */}
-        <ParentComp />
+        {/* <ParentComp /> */}
+        {/* Conditional rendering */}
+        <UserGreeting />
       </header>
     </div>
   );
