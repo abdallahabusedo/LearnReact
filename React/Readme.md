@@ -517,7 +517,7 @@ what id we want to send something from the child component to the parent compone
 
 ![a](https://user-images.githubusercontent.com/42722816/92335269-ea4e1300-f095-11ea-9104-11a79a15c806.png)
 
----
+## </div>
 
 ## List Rendering
 
@@ -536,3 +536,38 @@ and the output is
 ![image](https://user-images.githubusercontent.com/42722816/92336307-76b10380-f09f-11ea-8b74-9f207e58e02b.png)
 
 </div>
+
+## Lists and Keys
+
+> A Key is a special string attribute ypu need to include when creating lists of elements.
+
+> Keys give the element a stable identity
+
+> Keys help React identify which items have changed , are added , or removed
+
+> Help in efficient Update of the user interface
+
+## Index as Key Anti-pattern
+
+when to use index as a Key ?
+
+1.  the item in your list do not have a unique id.
+2.  the list is a static list and will not change.
+3.  the list will never be reordered or filtered
+
+<div align="center">
+
+![a](https://user-images.githubusercontent.com/42722816/92667544-7ec1ab00-f30c-11ea-8294-6ea5e999d705.png)
+
+</div>
+
+## Styling and CSS Basics
+
+1. CSS stylesheet
+2. inline styling
+3. CSS modules
+4. CSS in JS libraries
+
+[this is best video for this topics](https://www.youtube.com/watch?v=j5P9FHiBVNo&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=20)
+
+## Basics of Form Handling

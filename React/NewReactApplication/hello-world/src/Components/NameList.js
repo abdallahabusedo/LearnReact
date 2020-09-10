@@ -27,9 +27,9 @@ function NameList() {
       Skill: "react",
     },
   ];
-  const PersonList = Person.map((person) => (
+  const PersonList = Person.map((person, index) => (
     <h4>
-      my name is {person.name} and i am {person.age} yearn old and i know
+      {index}
       {person.Skill}
     </h4>
   ));
