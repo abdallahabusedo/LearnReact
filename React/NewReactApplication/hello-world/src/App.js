@@ -15,6 +15,7 @@ import EventBind from "./Components/EventBind";
 import ParentComp from "./Components/ParentComp";
 import UserGreeting from "./Components/UserGreeting";
 import NameList from "./Components/NameList";
+import Form from "./Components/FormHandling/Form";
 function App() {
   return (
     <div className="App">
@@ -44,7 +45,9 @@ function App() {
         {/* Conditional rendering */}
         {/* <UserGreeting /> */}
         {/* List Rendering */}
-        <NameList />
+        {/* <NameList /> */}
+        {/* Forms */}
+        <Form />
       </header>
     </div>
   );

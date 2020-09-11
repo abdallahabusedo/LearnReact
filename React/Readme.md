@@ -571,3 +571,87 @@ when to use index as a Key ?
 [this is best video for this topics](https://www.youtube.com/watch?v=j5P9FHiBVNo&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=20)
 
 ## Basics of Form Handling
+
+### Controlled Component
+
+```
+import React, { Component } from "react";
+
+class Form extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      userName: "",
+      comments: "",
+      Topic: "react",
+    };
+  }
+  handelUserName = (event) => {
+    this.setState({ userName: event.target.value });
+  };
+  handelComments = (event) => {
+    this.setState({ comments: event.target.value });
+  };
+  handelTopic = (event) => {
+    this.setState({ Topic: event.target.value });
+  };
+  handelSubmit = (event) => {
+    alert(`${this.state.userName} ${this.state.comments} ${this.state.Topic}`);
+    event.preventDefault();
+  };
+  render() {
+    return (
+      <div>
+        <form onSubmit={this.handelSubmit}>
+          <div>
+            <label>username</label>
+            <input
+              type="text"
+              value={this.state.userName}
+              onChange={this.handelUserName}
+            />
+          </div>
+          <div>
+            <label>Comments</label>
+            <textarea
+              value={this.state.comments}
+              onChange={this.handelComments}
+            ></textarea>
+          </div>
+          <div>
+            <select value={this.state.Topic} onChange={this.handelTopic}>
+              <option value="react">react</option>
+              <option value="Vue">Vue</option>
+              <option value="Angular">Angular</option>
+            </select>
+          </div>
+          <button type="submit">submit</button>
+        </form>
+      </div>
+    );
+  }
+}
+
+export default Form;
+```
+
+## Component Lifecycle Methods
+
+just for class components
+
+- Mounting : When an instance of a component is being created and inserted into the DOM
+  - Constructor
+  - Static getDerivedStateFromProps
+  - render
+  - componentDidMount
+- Updating : When a component is being re-rendered as a result of changes to either its props or state
+  - Static getDerivedStateFromProps
+  - ShouldComponentUpdate
+  - render
+  - getSnapshotBeforeUpdate
+  - componentDidUpdate
+- Unmounting : When a component is being removed from the DOM
+  - componentWillUnmount
+- Error Handling : when there is an error during rendering in a lifecycle method or in the constructor of any child component
+  - static getDerivedFromError
+  - componentDidCatch
